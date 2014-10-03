@@ -9,17 +9,16 @@
     {
         static void Main()
         {
+            var host = System.Environment.GetEnvironmentVariable ("HOST") ?? "localhost";
             var port = System.Environment.GetEnvironmentVariable("PORT");
-            var uri = new Uri("http://0.0.0.0:" + port);
+            var uri = new Uri("http://" + host + ":" + port);
             var nancyHost = new NancyHost(uri);
             nancyHost.Start();
 
             Console.WriteLine("Nancy now listening - " + uri.ToString());
 
-            var line = Console.ReadLine();
-            while(line != "quit") {
-              line = Console.ReadLine();
-            }
+            while (Console.ReadLine () != "quit");
+            nancyHost.Stop();
         }
     }
 }
