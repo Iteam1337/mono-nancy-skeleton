@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'deis' ]
+2 info using npm@1.4.9
+3 info using node@v0.11.13
+4 verbose cache add [ 'deis', null ]
+5 verbose cache add name=undefined spec="deis" args=["deis",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'deis',
+6 verbose parsed url   path: 'deis',
+6 verbose parsed url   href: 'deis' }
+7 silly lockFile 259a3e96-deis deis
+8 verbose lock deis /Users/cln/.npm/259a3e96-deis.lock
+9 silly lockFile 259a3e96-deis deis
+10 silly lockFile 259a3e96-deis deis
+11 verbose addNamed [ 'deis', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c9d37301-deis deis@
+14 verbose lock deis@ /Users/cln/.npm/c9d37301-deis.lock
+15 silly addNameRange { name: 'deis', range: '*', hasData: false }
+16 verbose url raw deis
+17 verbose url resolving [ 'https://registry.npmjs.org/', './deis' ]
+18 verbose url resolved https://registry.npmjs.org/deis
+19 info trying registry request attempt 1 at 21:07:56
+20 http GET https://registry.npmjs.org/deis
+21 http 404 https://registry.npmjs.org/deis
+22 verbose headers { date: 'Thu, 25 Sep 2014 19:07:57 GMT',
+22 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 verbose headers   'content-type': 'application/json',
+22 verbose headers   'cache-control': 'max-age=0',
+22 verbose headers   'content-length': '52',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   age: '0',
+22 verbose headers   'x-served-by': 'cache-fra1226-FRA',
+22 verbose headers   'x-cache': 'MISS',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1411672077.040332,VS0,VE103',
+22 verbose headers   connection: 'close' }
+23 silly registry.get cb [ 404,
+23 silly registry.get   { date: 'Thu, 25 Sep 2014 19:07:57 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=0',
+23 silly registry.get     'content-length': '52',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     'x-served-by': 'cache-fra1226-FRA',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1411672077.040332,VS0,VE103',
+23 silly registry.get     connection: 'close' } ]
+24 silly lockFile c9d37301-deis deis@
+25 silly lockFile c9d37301-deis deis@
+26 error 404 404 Not Found: deis
+26 error 404
+26 error 404 'deis' is not in the npm registry.
+26 error 404 You should bug the author to publish it
+26 error 404
+26 error 404 Note that you can also install from a
+26 error 404 tarball, folder, or http url, or git url.
+27 error System Darwin 14.0.0
+28 error command "node" "/usr/local/bin/npm" "install" "deis"
+29 error cwd /Users/cln/src/iteam/nancy/nancy-demo-hosting-self
+30 error node -v v0.11.13
+31 error npm -v 1.4.9
+32 error code E404
+33 verbose exit [ 1, true ]

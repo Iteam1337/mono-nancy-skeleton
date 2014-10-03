@@ -9,13 +9,12 @@
     {
         static void Main()
         {
-            var hostname = "nancy";
-
             var port = System.Environment.GetEnvironmentVariable("PORT");
-            var nancyHost = new NancyHost(new Uri("http://" + hostname + ".local3.stil.nu:" + port), new Uri("http://0.0.0.0:" + port));
+            var uri = new Uri("http://0.0.0.0:" + port);
+            var nancyHost = new NancyHost(uri);
             nancyHost.Start();
 
-            Console.WriteLine("Nancy now listening - navigating to http://" + hostname +".local3.stil.nu:" + port +".");
+            Console.WriteLine("Nancy now listening - " + uri.ToString());
 
             var line = Console.ReadLine();
             while(line != "quit") {
