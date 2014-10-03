@@ -1,5 +1,10 @@
-Demo project for hosting Nancy and Mono on Heroku
+Demo project for hosting Nancy and Mono on Dokku
 =================================================
+
+Set up mono buildpack on Dokku
+------------------------------
+To use the samples below you first need to install buildpack with mono support on your dokku machine. Please follow instructions on [https://github.com/Iteam1337/buildstep](https://github.com/Iteam1337/buildstep).
+
 
 Build locally
 -------------
